@@ -1,5 +1,17 @@
+@import 'variables';
 
-$color: blue;
 body {
-  background-color: $color;
+  font-family: $font;
+  padding: 20px;
+  background-color: $color-main;
+  color: $color-compliment-dark;
+  text-decoration: none;
+}
+
+#dashboard {
+  @include side-scroll();
+}
+
+.weather-card {
+  @include cards(250px, 400px);
 }

@@ -1,0 +1,15 @@
+@import 'variables';
+
+
+#dashboard {
+  @include side-scroll();
+}
+
+.weather-card {
+  @include cards(250px, 400px);
+}
+
+.add-city-card {
+  @include cards(250px, 400px);
+  background-color: $color-compliment-light;
+}

@@ -1,0 +1,9 @@
+@import 'variables';
+
+#forcast {
+  @include side-scroll();
+}
+
+.extended-weather-card {
+  @include cards(90vw, 400px);
+}
