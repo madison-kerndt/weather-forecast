@@ -1,0 +1,45 @@
+@import 'variables';
+
+header {
+  display: inline-block;
+  width: 100%;
+  // position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: $color-compliment-dark;
+}
+
+.nav-title {
+  @include link-reset();
+}
+
+.nav-title h1 {
+  margin: 20px;
+  font-size: 2.5em;
+}
+
+.nav-current-forcast {
+  color: $color-main;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: .7em;
+}
+
+.link-extended-city-forcast {
+  @include link-reset();
+  color: $color-highlight-second;
+  width: 180px;
+}
+
+@media (min-width: 520px) {
+  nav {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,36 @@
+$color-main: #EEEEEE;
+$color-compliment-dark: #333333;
+$color-compliment-light: #DDDDDD;
+
+$color-highlight-main: #D4E9F4;
+$color-highlight-second: #93DF92;
+
+$color-text-light: #FFFFFF;
+
+$font: 'Raleway', sans-serif;
+
+@mixin link-reset() {
+  text-decoration: none;
+  color: $color-compliment-dark;
+}
+
+@mixin cards($width, $height) {
+  margin: auto;
+  width: $width;
+  height: $height;
+  margin: 30px;
+  display: inline-block;
+  background-color: $color-highlight-main;
+}
+
+@mixin side-scroll() {
+  height: 100vh;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+
+  @media (min-width: 650px){
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+}
