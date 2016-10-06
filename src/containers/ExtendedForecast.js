@@ -4,7 +4,9 @@ import { connect } from 'react-redux';
 export default class ExtendedForecast extends Component {
   render() {
     return (
-      <div>ExtendedForecast!</div>
+      <section id="forcast">
+        <article className="extended-weather-card">Current weather4</article>
+      </section>
     )
   }
 }

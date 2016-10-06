@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 export default class PinnedCities extends Component {
   render() {
     return (
-      <div>PinnedCities!</div>
+      <section id="settings">PinnedCities
+      </section>
     )
   }
 }
