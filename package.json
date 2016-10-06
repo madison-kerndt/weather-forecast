@@ -4,9 +4,11 @@
   "private": true,
   "devDependencies": {
     "react-scripts": "^0.6.0",
-    "redux-logger": "^2.6.1"
+    "redux-logger": "^2.6.1",
+    "sass-loader": "^4.0.2"
   },
   "dependencies": {
+    "geolocation": "^0.2.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
