@@ -1,3 +1,10 @@
+export const displayWeather = (weather) => {
+  return {
+    type: 'DISPLAY_WEATHER',
+    weather
+  };
+};
+
 // export const RECEIVE_FORECAST = 'RECEIVE_FORECAST';
 //
 // export const receiveForecast = (forecastData) => ({

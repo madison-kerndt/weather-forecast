@@ -1,8 +1,13 @@
-const exampleReducer = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
+import  { combineReducers } from 'redux';
+import todos from './todos';
 
-export default exampleReducer;
+const reducer = combineReducers({
+  todos
+  // list all exported reducers here
+});
+
+export default reducer;
+// combineReducers({
+//   // list all exported reducers here
+//   weatherApp: reducer,
+// }),
