@@ -1,4 +1,4 @@
-export const potato = (state = {}, action) => {
+const potato = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_POTATO' :
       return console.log('potato');
@@ -6,3 +6,5 @@ export const potato = (state = {}, action) => {
       return state;
   }
 };
+
+export default potato;
