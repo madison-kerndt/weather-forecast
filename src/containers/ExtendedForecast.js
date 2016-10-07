@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import addPotato from '../actions/index';
+import ExtendedForecast from '../components/ExtendedForecast';
 
-export default class ExtendedForecast extends Component {
-  render() {
-    return (
-      <section id="forcast">
-        <article className="extended-weather-card">Current weather4</article>
-      </section>
-    )
-  }
-}
+const mapDispatchToProps=(dispatch) => {
+  return {
+    onClick: () => {
+      dispatch(addPotato("yo"));
+    }
+  };
+};
+
+let ExtendForecast = connect(null, mapDispatchToProps)(ExtendedForecast);
+
+export default ExtendForecast;

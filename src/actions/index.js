@@ -8,14 +8,9 @@
 //   // return fetch API call
 // };
 
-// const potato = 'aldjfladjfaldfkjadf';
-//
-// export default potato;
-//
-// export const tomato = () => {
-//   return {
-//     type: 'POTATO'
-//   }
-// }
-//
-// export default tomato;
+export const addPotato = (text) => {
+  return {
+    type: 'ADD_POTATO',
+    text
+  };
+};

@@ -1,17 +1,12 @@
-const rootReducer = (state = {}, action) => {
-  switch (action.type) {
-    case 'POTATO' :
-      return console.log('potato');
-    default:
-      return state
-  }
-}
+import { combineReducers } from 'redux';
+// import { routerReducer } from 'react-router-redux';
 
-// export const potato = (action) => {
-//   return {
-//     type: 'POTATO',
-//     action
-//   };
-// };
+import getWeather from './GetWeather';
+import potato from './potato';
+
+
+
+
+const rootReducer = combineReducers({getWeather, potato});
 
 export default rootReducer;

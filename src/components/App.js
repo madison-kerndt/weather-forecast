@@ -7,14 +7,9 @@ import tomato from '../actions/index.js';
 
 export default class App extends Component {
 
-  ConsoleLogPotato () {
-    console.log(tomato)
-  }
-
   render() {
     return (
       <section>
-      <button onClick={this.ConsoleLogPotato}>potato</button>
         <Header />
         <div>{this.props.children}</div>
       </section>
