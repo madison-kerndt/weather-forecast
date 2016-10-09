@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 // import { routerReducer } from 'react-router-redux';
-
-import getWeather from './GetWeather';
+import weather from './GetExtendedForecast';
 import potato from './potato';
 
-const rootReducer = combineReducers({getWeather, potato});
+const rootReducer = combineReducers({weather, potato});
 
 export default rootReducer;

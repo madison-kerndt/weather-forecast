@@ -1,4 +1,4 @@
-let weather ={
+let weatherData ={
   "coord":{"lon":139,"lat":35},
   "sys":{"country":"JP","sunrise":1369769524,"sunset":1369821049},
   "weather":[{"id":804,"main":"clouds","description":"overcast clouds","icon":"04n"}],
@@ -12,4 +12,4 @@ let weather ={
   "cod":200
 }
 
-export default weather;
+export default weatherData;
