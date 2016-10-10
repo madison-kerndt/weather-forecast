@@ -5,8 +5,10 @@ const weatherApp = (state = defaultState, action) => {
     case 'ADD_POTATO':
       console.log(state.currentCity.main);
       return state;
-    case 'CURRENT_TEMP':
-      return state.currentCity.main.temp;
+    case 'CURRENT_WEATHER':
+      return Object.assign({}, state, {
+        currentCity: action.city
+      });
     default:
       return state;
   }
@@ -14,7 +16,7 @@ const weatherApp = (state = defaultState, action) => {
 
 const defaultState = {
   pinnedCities: [],
-  currentCity: 'Denver'
+  currentCity: ''
 };
 
 export default weatherApp;

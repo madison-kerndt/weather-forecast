@@ -1,12 +1,16 @@
 import { connect } from 'react-redux';
-import { addaPotato } from '../actions/index';
+import { addaPotato, localWeather } from '../actions/index';
 import ExtendedForecast from '../components/ExtendedForecast';
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onLoadPotato: () => {
       dispatch(addaPotato())
+    },
+    getCurrentCity: () => {
+      dispatch(localWeather())
     }
+
   };
 };
 

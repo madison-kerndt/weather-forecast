@@ -31,7 +31,9 @@ export const addaPotato = () => {
 };
 
 export const localWeather = () => {
-  return { type: 'CURRENT_TEMP' };
+  return { type: 'CURRENT_WEATHER',
+          city: 'Denver'
+  };
 }
 
 export const extend5Day = () => {

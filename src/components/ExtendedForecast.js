@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const ExtendedForecast = ({ onLoadPotato, currentCity }) => {
+const ExtendedForecast = ({ onLoadPotato, currentCity, getCurrentCity }) => {
   return (
     <section id="forcast">
       <article className="extended-weather-card"
-        onClick={() => console.log(currentCity)}
+        onClick={() => getCurrentCity()}
       >
         <h1>{currentCity}</h1>
         <ul>
