@@ -6,6 +6,10 @@ import Header from '../containers/HeaderContainer';
 
 export default class App extends Component {
 
+  componentDidMount() {
+    
+  }
+
   render() {
     return (
       <section>
