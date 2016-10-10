@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, Router, IndexRoute, Route, browserHistory } from 'react-router';
-import Header from './Header'
+import Header from './Header';
+import tomato from '../actions/index.js';
 
 
 export default class App extends Component {

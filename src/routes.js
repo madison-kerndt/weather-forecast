@@ -1,11 +1,9 @@
 import React from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
-import App from './containers/App';
-import ExtendedForecast from './containers/ExtendedForecast';
-import PinnedCities from './containers/PinnedCities';
-import Home from './containers/Home';
-
-
+import App from './components/App';
+import ExtendedForecast from './containers/ExtendedForecastContainer';
+import PinnedCities from './components/PinnedCities';
+import Home from './components/Home';
 
 const Routes = (props) => (
   <Router {...props}>
@@ -16,7 +14,5 @@ const Routes = (props) => (
     </Route>
   </Router>
 );
-
-
 
 export default Routes;

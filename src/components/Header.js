@@ -14,6 +14,7 @@ export default class Header extends Component {
 
       console.log(position.coords.latitude, position.coords.longitude);
     });
+    console.log('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=8c5526a715e37b824b2faf2c370a6888');
   }
 
   render() {

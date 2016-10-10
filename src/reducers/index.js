@@ -1,8 +1,5 @@
-const exampleReducer = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
+import { combineReducers } from 'redux';
+import weatherApp from './WeatherApp';
 
-export default exampleReducer;
+const rootReducer = combineReducers({weatherApp});
+export default rootReducer;
