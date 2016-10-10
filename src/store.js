@@ -1,7 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 // import { browserHistory } from 'react-router';
 import thunk from 'redux-thunk';
-// import createLogger from 'redux-logger';
 import rootReducer from './reducers/index';
 
 const store = createStore(

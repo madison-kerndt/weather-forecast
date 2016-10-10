@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { addaPotato } from '../actions/index';
 import ExtendedForecast from '../components/ExtendedForecast';
 
@@ -11,8 +10,9 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-const mapStateToProps=(state) => {
+const mapStateToProps = (state) => {
   return {
+
   };
 };
 
