@@ -8,20 +8,20 @@
 //   // return fetch API call
 // };
 
-export default weatherApi {
-
- handleLocation() {
-   navigator.geolocation.getCurrentPosition((position) => {
-     return this.handleWeather(position.coords.latitude, position.coords.longitude, apikey);
-   });
- }
-
- handleWeather(lat, long, apikey) {
-   let url = (`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}`);
-   fetch(url)
-   .then((req) => { (req.json());  });
- }
-}
+// export default weatherApi {
+//
+//  handleLocation() {
+//    navigator.geolocation.getCurrentPosition((position) => {
+//      return this.handleWeather(position.coords.latitude, position.coords.longitude, apikey);
+//    });
+//  }
+//
+//  handleWeather(lat, long, apikey) {
+//    let url = (`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}`);
+//    fetch(url)
+//    .then((req) => { (req.json());  });
+//  }
+// }
 
 export const addaPotato = () => {
   return {

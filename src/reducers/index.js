@@ -1,7 +1,5 @@
 import { combineReducers } from 'redux';
-import weather from './GetExtendedForecast';
-import potato from './potato';
+import weatherApp from './WeatherApp';
 
-const rootReducer = combineReducers({weather, potato});
-
+const rootReducer = combineReducers({weatherApp});
 export default rootReducer;

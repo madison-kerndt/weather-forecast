@@ -13,3 +13,11 @@ const store = createStore(
 
 
 export default store;
+
+//
+// {
+//   weatherApp: {
+//     pinnedCities: [],
+//     currentCity: ''
+//   }
+// },

@@ -1,19 +1,20 @@
 import localWeather from '../data/localWeather';
 
-const potato = (state = defaultState, action) => {
+const weatherApp = (state = defaultState, action) => {
   switch (action.type) {
     case 'ADD_POTATO':
-      console.log(state.localWeather.main);
+      console.log(state.currentCity.main);
       return state;
     case 'CURRENT_TEMP':
-      return state.localWeather.main.temp;
+      return state.currentCity.main.temp;
     default:
       return state;
   }
 };
 
 const defaultState = {
-  localWeather
+  pinnedCities: [],
+  currentCity: 'Denver'
 };
 
-export default potato;
+export default weatherApp;

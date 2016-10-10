@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const ExtendedForecast = ({ onLoadPotato }) => {
+const ExtendedForecast = ({ onLoadPotato, currentCity }) => {
   return (
     <section id="forcast">
       <article className="extended-weather-card"
-        onClick={() => onLoadPotato()}
+        onClick={() => console.log(currentCity)}
       >
-        <h1>Current weather 4</h1>
+        <h1>{currentCity}</h1>
         <ul>
           <li>
             <h2>Day 1</h2>

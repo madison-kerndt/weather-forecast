@@ -11,8 +11,11 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log(state.weatherApp.pinnedCities);
+  console.log(state.weatherApp.currentCity);
   return {
-
+    pinnedCities: state.weatherApp.pinnedCities,
+    currentCity: state.weatherApp.currentCity
   };
 };
 
