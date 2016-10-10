@@ -7,8 +7,11 @@ const weatherApp = (state = defaultState, action) => {
       return state;
     case 'CURRENT_WEATHER':
       return Object.assign({}, state, {
-        currentCity: action.city
+        currentCity: action.weather.name
       });
+    case 'HIT_API':
+      console.log('in reducer: ',action.weather);
+      return state;
     default:
       return state;
   }
