@@ -1,20 +1,20 @@
 import { connect } from 'react-redux';
-import addaPotato from '../actions/index';
+import { bindActionCreators } from 'redux';
+import { addaPotato } from '../actions/index';
 import ExtendedForecast from '../components/ExtendedForecast';
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    fun: () => {
-      dispatch(console.log(addaPotato()));
+    onLoadPotato: () => {
+      dispatch(addaPotato())
     }
   };
 };
 
-const mapStateToProps=(dispatch) => {
+const mapStateToProps=(state) => {
   return {
-    store.dispatch()
   };
-}
+};
 
 let ExtendForecast = connect(mapStateToProps, mapDispatchToProps)(ExtendedForecast);
 

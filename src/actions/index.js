@@ -8,7 +8,7 @@
 //   // return fetch API call
 // };
 
-const addaPotato = (id) => {
+export const addaPotato = () => {
   return {
     type: 'ADD_POTATO',
     id: 'butts'
@@ -22,4 +22,4 @@ export const extend5Day = () => {
 };
 
 
-export default addaPotato;
+// export default addaPotato;

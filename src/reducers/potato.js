@@ -1,7 +1,8 @@
 const potato = (state = defaultState, action) => {
   switch (action.type) {
     case 'ADD_POTATO' :
-      return console.log(defaultState);
+      console.log(defaultState);
+      return state;
     default:
       return state;
   }

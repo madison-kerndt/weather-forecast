@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import App from './components/App';
-import ExtendedForecast from './components/ExtendedForecast';
+import ExtendedForecast from './containers/ExtendedForecastContainer';
 import PinnedCities from './components/PinnedCities';
 import Home from './components/Home';
 
