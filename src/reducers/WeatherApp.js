@@ -12,7 +12,7 @@ const weatherApp = (state = defaultState, action) => {
       });
     case 'ADD_PINNEDCITY':
       return Object.assign({}, state, {
-        pinnedCities: state.pinnedCities.concat(action)
+        pinnedCities: state.pinnedCities.concat(action.input)
       });
     default:
       return state;
