@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const ExtendedForecast = ({ getCurrentCity , extendedForecast  }) => {
   return (
-    <section id="forcast">
+    <section id="forecast">
       <article className="extended-weather-card"
         onClick={() => getCurrentCity()}>
         <ul>

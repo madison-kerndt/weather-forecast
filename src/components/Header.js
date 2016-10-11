@@ -7,14 +7,14 @@ const Header = ({ currentCity, getWeatherAPI }) => {
     <header>
       <Link to="/" className="nav-title"><h1>Weather Tracker</h1></Link>
       <nav>
-        <article className="nav-current-forcast">
+        <article className="nav-current-forecast">
           <button onClick={getWeatherAPI}></button>
           <p>The current forecast for {currentCity && currentCity.name} : 
             {currentCity && currentCity.weather.description }
             {currentCity && Math.round(currentCity.main.temp) }°
           </p>
         </article>
-        <Link className="link-extended-city-forcast" to="/extended-forecast"><nav>Extended Forecast »</nav></Link>
+        <Link className="link-extended-city-forecast" to="/extended-forecast"><nav>Extended Forecast »</nav></Link>
       </nav>
     </header>
   )
