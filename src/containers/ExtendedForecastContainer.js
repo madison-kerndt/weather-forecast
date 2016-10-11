@@ -1,21 +1,23 @@
 import { connect } from 'react-redux';
-import { addaPotato } from '../actions/index';
+import { extendedForecast } from '../actions/index';
 import ExtendedForecast from '../components/ExtendedForecast';
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onLoadPotato: () => {
-      dispatch(addaPotato())
+    getCurrentCity: () => {
+      const apikey = '8c5526a715e37b824b2faf2c370a6888';
+      navigator.geolocation.getCurrentPosition((position) => {
+        return fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=${apikey}`)
+          .then((res) => res.json())
+          .then((forecast) => dispatch(extendedForecast(forecast)));
+      });
     }
   };
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.weatherApp.pinnedCities);
-  console.log(state.weatherApp.currentCity);
   return {
-    pinnedCities: state.weatherApp.pinnedCities,
-    currentCity: state.weatherApp.currentCity
+    extendedForecast: state.weatherApp.extendedForecast
   };
 };
 
