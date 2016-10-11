@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import App from './components/App';
 import ExtendedForecast from './containers/ExtendedForecastContainer';
-import PinnedCities from './components/PinnedCities';
+import PinnedCities from './containers/PinnedCitiesContainer';
 import Home from './components/Home';
 
 const Routes = (props) => (

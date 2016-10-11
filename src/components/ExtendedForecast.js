@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const ExtendedForecast = ({ getCurrentCity, currentCity, extendedForecast  }) => {
+const ExtendedForecast = ({ getCurrentCity , extendedForecast  }) => {
   return (
     <section id="forcast">
       <article className="extended-weather-card"
-        onClick={() => getCurrentCity()}
-      >
-        <h1>{currentCity}</h1>
+        onClick={() => getCurrentCity()}>
         <ul>
           {extendedForecast && extendedForecast.list.map((hour) => <li>{hour.dt_txt}: <h3>{Math.round(hour.main.temp)}</h3></li>)}
         </ul>
