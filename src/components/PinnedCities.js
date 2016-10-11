@@ -22,7 +22,7 @@ let input;
                   type="number"
                   className="add-zip-field"
                   placeholder="Zip Code" />
-                <button
+                <button disabled={pinnedCities.length >= 3 ? true : false}
                   className="add-city-button">
                   Pin New City
                 </button>
