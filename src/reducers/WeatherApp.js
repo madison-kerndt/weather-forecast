@@ -6,13 +6,17 @@ const weatherApp = (state = defaultState, action) => {
       return Object.assign({}, state, {
         currentCity: action.weather
       });
+      case 'PINNED_WEATHER':
+        return Object.assign({}, state, {
+          pinnedWeather: state.pinnedCities.concat(action)
+        });
     case 'EXTENDED_FORECAST':
       return Object.assign({}, state, {
         extendedForecast: action.weather
       });
     case 'ADD_PINNEDCITY':
       return Object.assign({}, state, {
-        pinnedCities: state.pinnedCities.concat(action)
+        pinnedCities: state.pinnedCities.concat(action.input)
       });
     default:
       return state;
@@ -22,7 +26,8 @@ const weatherApp = (state = defaultState, action) => {
 const defaultState = {
   pinnedCities: [ {'zip':80202,'city':'Denver'} , {'zip':80305,'city':'Boulder'} ],
   currentCity: '',
-  extendedForecast: ''
+  extendedForecast: '',
+  pinnedWeather: []
 };
 
 export default weatherApp;
