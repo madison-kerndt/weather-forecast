@@ -27,10 +27,12 @@ export default class Home extends Component {
           </h1>
           <ul>
           {this.state.weather.length && this.state.weather.map((city) => {
-           return (<li className="weather-card" key={city.id}>{city.name}: {city.main.temp}</li>)
+           return (<li className="weather-card" key={city.id}>{city.name}: {city.main.temp}
+           <Link className="link-extended-city-forecast" to={`/extended-forecast/${city.id}`}>Extended Forecast »</Link>
+           </li>)
           })}
           </ul>
-          <Link to="/pinned-cities"><article className="add-city-card">+ Pin another city</article></Link>
+          <Link to="/pinned-cities"><article className="add-city-card">+ Edit Pinned Cities</article></Link>
         </section>
     )
   }
