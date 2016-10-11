@@ -11,9 +11,9 @@ describe('ExtendedForecast', () => {
   const wrapper = shallow(<ExtendedForecast/>);
 
   it('renders a <ul> on the page', () => {
-    const title = <ul></ul>;
+    const ul = <ul></ul>;
 
-    expect(wrapper.contains(title)).toEqual(true);
+    expect(wrapper.contains(ul)).toEqual(true);
   });
   it('has a class of .forecast', () => {
 

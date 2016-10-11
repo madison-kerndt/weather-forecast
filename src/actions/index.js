@@ -12,6 +12,5 @@ export const extendedForecast = (weather) => {
 };
 
 export const pinNewCity = (input) => {
-  debugger;
   return { type: 'ADD_PINNEDCITY', input };
 };
