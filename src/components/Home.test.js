@@ -1,17 +1,18 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Home from './Home';
+import weatherData from '../data/data'
+import jsdom from 'jsdom';
+const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
+global.document = doc;
+global.window = doc.defaultView;
 
 describe('Home', () => {
   const wrapper = shallow(<Home/>);
 
-  it('renders a <h1> on the page', () => {
-    const h1 = <h1></h1>;
-
-    expect(wrapper.contains(h1)).toEqual(true);
-  });
   it('has a div wrapper', () => {
 
-    expect(wrapper.is('div')).toEqual(true);
+    expect(wrapper.type(), 'div')
   });
+
 });
