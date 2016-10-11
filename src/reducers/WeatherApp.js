@@ -1,4 +1,4 @@
-import localWeather from '../data/localWeather';
+import { localWeather } from '../data/localWeather';
 
 const weatherApp = (state = defaultState, action) => {
   switch (action.type) {

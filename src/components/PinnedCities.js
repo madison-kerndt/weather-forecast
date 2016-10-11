@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+let input;
 const PinnedCities = ({ pinnedCities , pinNewCity }) => {
 let input;
   return (
