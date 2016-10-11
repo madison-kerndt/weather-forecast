@@ -7,7 +7,7 @@ import Header from '../containers/HeaderContainer';
 export default class App extends Component {
 
   componentDidMount() {
-    
+
   }
 
   render() {
@@ -19,11 +19,3 @@ export default class App extends Component {
     )
   }
 }
-
-// const mapStateToProps = state => {
-//   // return an object of redux store data
-//   // that you'd like available in your component
-//   return {};
-// }
-//
-// export default connect(mapStateToProps)(App);
