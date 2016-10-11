@@ -3,7 +3,7 @@ export const localWeather = (weather) => {
   return { type: 'CURRENT_WEATHER', weather };
 };
 
-export const pinnedlWeather = (weather) => {
+export const getWeather = (weather) => {
   return { type: 'PINNED_WEATHER', weather };
 };
 
@@ -12,6 +12,5 @@ export const extendedForecast = (weather) => {
 };
 
 export const pinNewCity = (input) => {
-  debugger;
   return { type: 'ADD_PINNEDCITY', input };
 };

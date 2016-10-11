@@ -24,7 +24,7 @@ const weatherApp = (state = defaultState, action) => {
 };
 
 const defaultState = {
-  pinnedCities: [ {'zip':80202,'city':'Denver'} , {'zip':80305,'city':'Boulder'} ],
+  pinnedCities: [],
   currentCity: '',
   extendedForecast: '',
   pinnedWeather: []

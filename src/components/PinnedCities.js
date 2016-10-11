@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-let input;
 const PinnedCities = ({ pinnedCities , pinNewCity }) => {
 let input;
   return (
@@ -22,7 +21,7 @@ let input;
           type="number"
           className="add-zip-field"
           placeholder="Zip Code" />
-        <button
+        <button disabled={pinnedCities.length >= 3 ? true : false}
           className="add-city-button">
           Pin New City
         </button>
@@ -32,20 +31,3 @@ let input;
 }
 
 export default PinnedCities
-
-
-
-
-
-//
-//
-// <form className='InputCityArea' onSubmit={ (e) => {
-//   e.preventDefault()
-//   pinNewCity(input.value)
-// }}>
-// <input placeholder='Zip Code' className='InputPinCityZip' ref={ node  => {input = node}}/>
-// <button children='Pin New City' className='SubmitNewCity'/>
-// </form>
-
-
-// ref={ node  => {input = node}}
