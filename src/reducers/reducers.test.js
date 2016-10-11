@@ -9,6 +9,7 @@ describe('WeatherApp', () => {
        ],
        "currentCity": '',
        "extendedForecast": '',
+       "pinnedWeather": []
      }
     );
   });
