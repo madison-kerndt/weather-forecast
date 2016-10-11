@@ -15,6 +15,7 @@ describe('ExtendedForecast', () => {
 
     expect(wrapper.contains(ul)).toEqual(true);
   });
+  
   it('has a class of .forecast', () => {
 
     expect(wrapper.is('#forecast')).toEqual(true);

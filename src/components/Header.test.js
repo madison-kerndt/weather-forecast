@@ -10,11 +10,6 @@ global.window = doc.defaultView;
 describe('Header', () => {
   const wrapper = shallow(<Header/>);
 
-  it('renders a <nav> on the page', () => {
-    const nav = <nav></nav>;
-
-    expect(wrapper.contains(nav)).toEqual(true);
-  });
   it('is wrapped in a header', () => {
 
     expect(wrapper.is('header')).toEqual(true);
