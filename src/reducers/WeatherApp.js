@@ -6,6 +6,10 @@ const weatherApp = (state = defaultState, action) => {
       return Object.assign({}, state, {
         currentCity: action.weather
       });
+    case 'EXTENDED_FORECAST':
+      return Object.assign({}, state, {
+        extendedForecast: action.weather
+      });
     default:
       return state;
   }
@@ -13,7 +17,8 @@ const weatherApp = (state = defaultState, action) => {
 
 const defaultState = {
   pinnedCities: [],
-  currentCity: ''
+  currentCity: '',
+  extendedForecast: ''
 };
 
 export default weatherApp;

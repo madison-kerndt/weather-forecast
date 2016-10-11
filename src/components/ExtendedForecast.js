@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const ExtendedForecast = ({ onLoadPotato, currentCity, getCurrentCity }) => {
+const ExtendedForecast = ({ getCurrentCity, currentCity, extendedForecast  }) => {
   return (
     <section id="forcast">
       <article className="extended-weather-card"
@@ -9,12 +9,7 @@ const ExtendedForecast = ({ onLoadPotato, currentCity, getCurrentCity }) => {
       >
         <h1>{currentCity}</h1>
         <ul>
-          <li>
-            <h2>Day 1</h2>
-            <h3>Hour 1</h3>
-            <h3>Hour 2</h3>
-            <h3>Hour 3</h3>
-          </li>
+          {extendedForecast && extendedForecast.list.map((hour) => <li>{hour.dt_txt}: <h3>{Math.round(hour.main.temp)}</h3></li>)}
         </ul>
       </article>
     </section>
